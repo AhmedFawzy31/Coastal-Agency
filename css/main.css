@@ -1,0 +1,41 @@
+/* variable */
+:root {
+  --dark: #242220;
+  --dark2: #1a1818;
+  --dark3: #030404;
+}
+/* media queries */
+@media screen and (min-width: 1600px) {
+  .container {
+    max-width: 1415px !important;
+  }
+}
+/* text */
+h1,
+h2,
+h3,
+h4,
+a,
+html {
+  line-height: 1;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+/* buttons */
+.shadow-btn {
+  font-size: 23px;
+  font-family: "ABC Whyte Inktrap";
+  color: var(--dark3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e0d8ce;
+  border: 1px solid #060706;
+  box-shadow: 10px 10px 0px 0px rgba(6, 7, 6, 1);
+}
