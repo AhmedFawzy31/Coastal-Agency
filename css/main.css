@@ -26,6 +26,11 @@ ul {
 }
 a {
   text-decoration: none;
+  transition: 300ms all ease-in-out;
+}
+a:hover {
+  color: inherit;
+  opacity: 0.5;
 }
 /* buttons */
 .shadow-btn {
@@ -38,4 +43,99 @@ a {
   background-color: #e0d8ce;
   border: 1px solid #060706;
   box-shadow: 10px 10px 0px 0px rgba(6, 7, 6, 1);
+}
+@media screen and (max-width: 374px) {
+  .shadow-btn {
+    box-shadow: 5px 5px 0px 0px rgb(6 7 6);
+  }
+}
+/* general */
+body {
+  background-image: url("../images/Background.jpg");
+  background-size: contain;
+}
+/* nav */
+nav .nav-wrapper,
+nav .nav-wrapper ul {
+  display: flex;
+}
+nav .nav-wrapper {
+  justify-content: space-between;
+  align-items: center;
+}
+nav {
+  font-family: "ABC Whyte Inktrap";
+  padding-top: 65px;
+}
+nav ul li:not(:first-of-type) {
+  margin-left: 40px;
+}
+nav .logo {
+  color: var(--dark);
+  font-size: 26px;
+  letter-spacing: -0.05em;
+}
+nav ul li a {
+  color: #1a1818;
+  font-size: 20px;
+}
+@media screen and (max-width: 767px) {
+  nav .nav-wrapper {
+    display: block;
+    text-align: center;
+  }
+  nav ul li:not(:first-of-type) {
+    margin-left: 0;
+  }
+  nav .nav-wrapper ul {
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+}
+@media screen and (max-width: 575px) {
+  nav .container {
+    padding: 0 35px;
+  }
+}
+@media screen and (max-width: 374px) {
+  nav .logo {
+    font-size: 20px;
+  }
+  nav ul li a {
+    font-size: 15px;
+  }
+  nav .nav-wrapper ul {
+    margin-top: 7px;
+  }
+  nav {
+    padding-top: 25px;
+  }
+}
+/* footer */
+footer {
+  text-align: right;
+  padding-bottom: 30px;
+}
+footer p,
+footer a {
+  margin: 0;
+  line-height: 1;
+  color: var(--dark2);
+  font-family: "ABC Whyte Inktrap";
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .footer-wrapper {
+    justify-content: flex-start;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer a:last-of-type {
+    padding-left: 80px;
+  }
 }
