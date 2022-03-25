@@ -7,10 +7,32 @@
   font-display: swap;
 }
 @font-face {
+  font-family: "ABC Whyte Inktrap";
+  src: url("ABCWhyteInktrap-Light-Trial.woff2") format("woff2"),
+    url("ABCWhyteInktrap-Light-Trial.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
   font-family: "ABC Whyte Book";
   src: url("ABCWhyte-Book-Trial.woff2") format("woff2"),
     url("ABCWhyte-Book-Trial.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
+}
+@font-face {
+  font-family: "ABC Whyte";
+  src: url("ABCWhyte-Medium-Trial.woff2") format("woff2"),
+    url("ABCWhyte-Medium-Trial.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Myriad Pro Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Myriad Pro Regular"), url("MYRIADPRO-REGULAR.woff") format("woff");
 }

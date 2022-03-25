@@ -1,0 +1,147 @@
+header {
+  padding-top: 180px;
+  padding-bottom: 250px;
+}
+header .row {
+  align-items: flex-end;
+}
+header .row > div:first-of-type > div {
+  padding-bottom: 75px;
+}
+header .row > div:last-of-type {
+  max-width: 393px;
+}
+header p,
+header .contact-tel {
+  padding-left: 30px;
+}
+header .contact-tel {
+  font-family: "Myriad Pro Regular";
+  font-size: 20px;
+  color: var(--dark2);
+}
+header .row > div:last-of-type {
+  display: flex;
+  justify-content: flex-end;
+}
+header .contact-form {
+  padding-right: 25px;
+}
+header .header-text {
+  max-width: 658px;
+}
+/* form */
+.contact-form {
+  width: 100%;
+}
+input,
+label {
+  display: block;
+}
+label {
+  font-family: "ABC Whyte";
+  font-size: 15px;
+  letter-spacing: -0.05em;
+  color: var(--dark2);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+input:not(.shadow-btn),
+textarea {
+  height: 60px;
+  background-color: #e0d8ce;
+  border: 1px solid #060706;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
+  padding-left: 18px;
+  font-size: 22px;
+  font-family: "ABC Whyte Inktrap";
+  font-weight: 300;
+  outline: 0;
+}
+textarea {
+  height: 125px;
+  padding-top: 5px;
+}
+form .shadow-btn {
+  width: 100%;
+  height: 60px;
+  margin-top: 30px;
+}
+/* responsive */
+@media screen and (max-width: 1599px) {
+  input:not(.shadow-btn) {
+    height: 50px;
+  }
+  header .row > div:first-of-type > div {
+    padding-bottom: 70px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  header .row {
+    align-items: center;
+  }
+  header .row > div:first-of-type > div {
+    padding-bottom: 0;
+  }
+  header .header-text {
+    max-width: 550px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header h1 {
+    font-size: 70px;
+  }
+  header .header-text {
+    font-size: 16px;
+    max-width: 450px;
+  }
+  header {
+    padding-top: 100px;
+    padding-bottom: 170px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .contact-form {
+    margin-top: 50px;
+  }
+  header .row > div:last-of-type {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 575px) {
+  header .container {
+    padding: 0 35px;
+  }
+  header h1 {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 479px) {
+  header h1 {
+    font-size: 55px;
+  }
+  header .header-text {
+    font-size: 16px;
+    padding-left: 25px;
+  }
+  header .contact-tel {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 374px) {
+  header h1 {
+    font-size: 50px;
+  }
+  header .header-text {
+    font-size: 12px;
+    padding-left: 25px;
+  }
+  header .contact-tel {
+    font-size: 16px;
+  }
+}
