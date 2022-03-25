@@ -74,6 +74,10 @@ header .row > div:first-of-type > div {
   }
 }
 @media screen and (max-width: 767px) {
+  header {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
   header .row > div:first-of-type > div {
     position: static;
   }
@@ -106,7 +110,7 @@ header .row > div:first-of-type > div {
   }
   .about-text {
     padding-left: 23px;
-    padding-right: 13px;
+    padding-right: 23px;
   }
   .shadow-btn {
     margin-right: 10px;

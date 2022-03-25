@@ -28,11 +28,16 @@ header .header-text {
   padding-left: 38px;
 }
 header .shadow-btn {
-  width: 393px;
+  max-width: 393px;
   height: 60px;
   margin-left: -37px;
 }
-
+footer .footer-wrapper {
+  display: flex;
+}
+footer p {
+  margin-left: 9px;
+}
 /* responsive */
 @media screen and (max-width: 1599px) {
   header h1 {
@@ -88,7 +93,7 @@ header .shadow-btn {
     font-size: 50px;
   }
   header .shadow-btn {
-    width: 100%;
+    max-width: 100%;
   }
   header .header-text {
     max-width: 100%;
@@ -104,13 +109,13 @@ header .shadow-btn {
   header .header-text {
     font-size: 16px;
   }
+  header .shadow-btn {
+    margin-right: 10px;
+  }
 }
 @media screen and (max-width: 479px) {
   header h1 {
     font-size: 34px;
-  }
-  .shadow-btn {
-    font-size: 20px;
   }
 }
 @media screen and (max-width: 374px) {

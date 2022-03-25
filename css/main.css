@@ -92,6 +92,9 @@ nav ul li a {
   nav ul li:not(:first-of-type) {
     margin-left: 0;
   }
+  nav ul li a:not(.curr) {
+    opacity: 0.5;
+  }
   nav .nav-wrapper ul {
     justify-content: space-between;
     margin-top: 15px;
@@ -125,6 +128,12 @@ header h1 {
 header .header-text {
   font-size: 20px;
   font-family: "ABC Whyte Inktrap";
+  line-height: 1.2;
+}
+@media screen and (max-width: 767px) {
+  header .header-text {
+    line-height: 1.58;
+  }
 }
 /* footer */
 footer {
@@ -145,7 +154,7 @@ footer a {
 }
 @media screen and (max-width: 767px) {
   .footer-wrapper {
-    justify-content: flex-start;
+    justify-content: center;
   }
   footer {
     font-size: 12px;

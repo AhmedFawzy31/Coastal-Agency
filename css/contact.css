@@ -29,6 +29,7 @@ header .contact-form {
 }
 header .header-text {
   max-width: 658px;
+  margin-bottom: 0;
 }
 /* form */
 .contact-form {
@@ -104,24 +105,30 @@ form .shadow-btn {
   }
 }
 @media screen and (max-width: 991px) {
-  .contact-form {
+  header .contact-form {
     margin-top: 50px;
+    padding-right: 0;
   }
   header .row > div:last-of-type {
     max-width: 100%;
   }
 }
 @media screen and (max-width: 767px) {
+  header {
+    padding-top: 90px;
+    padding-bottom: 30px;
+  }
 }
 @media screen and (max-width: 575px) {
-  header .container {
-    padding: 0 35px;
-  }
   header h1 {
     font-size: 60px;
   }
 }
 @media screen and (max-width: 479px) {
+  header {
+    padding-top: 42px;
+    padding-bottom: 30px;
+  }
   header h1 {
     font-size: 55px;
   }
@@ -134,8 +141,15 @@ form .shadow-btn {
   }
 }
 @media screen and (max-width: 374px) {
+  header {
+    padding-top: 18px;
+  }
   header h1 {
-    font-size: 50px;
+    font-size: 33px;
+    margin-bottom: 20px;
+  }
+  .contact-form {
+    margin-top: 30px;
   }
   header .header-text {
     font-size: 12px;
