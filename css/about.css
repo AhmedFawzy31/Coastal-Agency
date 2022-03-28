@@ -87,7 +87,7 @@ header .row > div:first-of-type > div {
   .header-img {
     max-width: 100%;
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 45px;
   }
   .header-img img {
     max-height: 141px;
@@ -102,6 +102,7 @@ header .row > div:first-of-type > div {
   }
   header .row > div:first-of-type > div {
     padding-right: 0;
+    margin-top: 0;
   }
 }
 @media screen and (max-width: 575px) {
