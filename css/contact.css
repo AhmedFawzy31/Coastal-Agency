@@ -35,6 +35,10 @@ header .row > div:last-of-type {
 header .contact-form {
   padding-right: 25px;
 }
+form {
+  display: flex;
+  flex-direction: column;
+}
 header .header-text {
   max-width: 658px;
   margin-bottom: 0;
@@ -131,6 +135,9 @@ form .shadow-btn {
     padding-top: 90px;
     padding-bottom: 30px;
   }
+  .shadow-btn {
+    width: auto;
+  }
 }
 @media screen and (max-width: 575px) {
   header h1 {
@@ -177,7 +184,7 @@ form .shadow-btn {
 @media screen and (min-width: 768px) {
   .shadow-btn {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
   }
 }
 @media screen and (min-width: 992px) {

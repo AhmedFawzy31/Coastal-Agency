@@ -51,7 +51,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .shadow-btn:not(.bottom-section .shadow-btn):not(.contact-form .shadow-btn) {
     position: absolute;
-    bottom: 40px;
+    bottom: 50px;
     width: 393px;
   }
 }
