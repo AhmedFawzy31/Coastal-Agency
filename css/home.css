@@ -1,7 +1,18 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
 /* header */
 header {
   padding-top: 90px;
   padding-bottom: 50px;
+  display: flex;
+  flex-grow: 2;
+}
+header .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 header .row {
   align-items: center;
@@ -28,7 +39,7 @@ header .header-text {
   padding-left: 38px;
 }
 header .shadow-btn {
-  max-width: 393px;
+  width: 393px;
   height: 60px;
   margin-left: -37px;
 }
@@ -81,6 +92,13 @@ footer p {
   }
 }
 @media screen and (max-width: 767px) {
+  header .bottom-section {
+    display: block;
+  }
+  header .map-wrapper {
+    justify-content: center;
+    margin-top: 50px;
+  }
   header .row > div:first-of-type {
     order: 2;
   }
@@ -93,7 +111,7 @@ footer p {
     font-size: 50px;
   }
   header .shadow-btn {
-    max-width: 100%;
+    width: 100%;
   }
   header .header-text {
     max-width: 100%;
@@ -137,4 +155,33 @@ footer p {
   header .header-text {
     margin-bottom: 40px;
   }
+}
+/* map */
+.map-wrapper p,
+.map-wrapper a {
+  margin: 0;
+  line-height: 1;
+  color: var(--dark2);
+  font-family: "ABC Whyte Inktrap";
+}
+@media screen and (max-width: 767px) {
+  .map-wrapper {
+    font-size: 12px;
+  }
+}
+.map-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.map-wrapper p {
+  margin-left: 10px;
+}
+.map-wrapper img {
+  width: auto;
+}
+.bottom-section {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
 }
