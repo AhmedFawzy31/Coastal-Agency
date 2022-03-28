@@ -1,9 +1,9 @@
 header {
   padding-top: 155px;
-  padding-bottom: 190px;
+  padding-bottom: 225px;
 }
 header .row {
-  align-items: center;
+  align-items: flex-end;
 }
 header .row > div:last-of-type {
   display: flex;
@@ -24,7 +24,6 @@ header .header-text:not(:last-of-type) {
   max-width: 403px;
   margin-left: auto;
   margin-right: auto;
-  bottom: 40px;
 }
 .header-img {
   margin-right: 25px;
@@ -37,7 +36,8 @@ header .header-text:not(:last-of-type) {
   object-fit: cover;
 }
 header .row > div:first-of-type > div {
-  margin-top: 30px;
+  position: relative;
+  top: 30px;
 }
 /* responsive */
 @media screen and (max-width: 1599px) {
@@ -94,8 +94,7 @@ header .row > div:first-of-type > div {
     box-shadow: 10px 10px 0px 0px rgb(6 7 6);
   }
   .shadow-btn {
-    max-width: 100% !important;
-    margin-top: 90px;
+    max-width: 100%;
   }
   .header-img {
     margin-right: 0;
@@ -131,6 +130,9 @@ header .row > div:first-of-type > div {
   header .header-text:not(:last-of-type) {
     margin-bottom: 10px;
   }
+  .shadow-btn {
+    margin-top: 42px;
+  }
 }
 @media screen and (max-width: 374px) {
   header h1 {
@@ -142,10 +144,5 @@ header .row > div:first-of-type > div {
   .shadow-btn {
     font-size: 13px;
     height: 43px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-  header .shadow-btn {
-    width: 311px !important;
   }
 }

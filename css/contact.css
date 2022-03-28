@@ -1,6 +1,6 @@
 header {
   padding-top: 180px;
-  padding-bottom: 190px;
+  padding-bottom: 250px;
 }
 header h1 {
   margin: 0;
@@ -103,18 +103,10 @@ form .shadow-btn {
   }
   header {
     padding-top: 100px;
-    padding-bottom: 50px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {
-  .shadow-btn {
-    width: 686px;
+    padding-bottom: 170px;
   }
 }
 @media screen and (max-width: 991px) {
-  .message {
-    margin-bottom: 50px;
-  }
   header .contact-form {
     margin-top: 50px;
     padding-right: 0;
@@ -143,6 +135,7 @@ form .shadow-btn {
 @media screen and (max-width: 479px) {
   header {
     padding-top: 42px;
+    padding-bottom: 30px;
   }
   header h1 {
     font-size: 55px;
@@ -172,21 +165,5 @@ form .shadow-btn {
   }
   header .contact-tel {
     font-size: 16px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .shadow-btn {
-    position: absolute;
-    bottom: 40px;
-  }
-}
-@media screen and (min-width: 992px) {
-  .shadow-btn {
-    width: 334px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .shadow-btn {
-    width: 358px;
   }
 }

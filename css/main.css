@@ -48,13 +48,6 @@ a:hover {
   border: 1px solid #060706;
   box-shadow: 10px 10px 0px 0px rgba(6, 7, 6, 1);
 }
-@media screen and (min-width: 768px) {
-  .shadow-btn:not(.bottom-section .shadow-btn):not(.contact-form .shadow-btn) {
-    position: absolute;
-    bottom: 40px;
-    width: 393px;
-  }
-}
 @media screen and (max-width: 374px) {
   .shadow-btn {
     box-shadow: 5px 5px 0px 0px rgb(6 7 6);
@@ -69,8 +62,6 @@ a:hover {
 body {
   background-image: url("../images/Background.jpg");
   background-size: contain;
-  position: relative;
-  min-height: 100vh;
 }
 /* nav */
 nav .nav-wrapper,
@@ -146,5 +137,33 @@ header .header-text {
 @media screen and (max-width: 767px) {
   header .header-text {
     line-height: 1.58;
+  }
+}
+/* footer */
+footer {
+  text-align: right;
+  padding-bottom: 30px;
+}
+footer p,
+footer a {
+  margin: 0;
+  line-height: 1;
+  color: var(--dark2);
+  font-family: "ABC Whyte Inktrap";
+}
+.footer-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media screen and (max-width: 767px) {
+  .footer-wrapper {
+    justify-content: center;
+  }
+  footer {
+    font-size: 12px;
+  }
+  footer a:last-of-type {
+    padding-left: 80px;
   }
 }
