@@ -35,7 +35,6 @@ header h1 {
 }
 header .header-text {
   max-width: 802px;
-  padding-top: 18px;
   margin-bottom: 0;
 }
 .services ul {
@@ -128,6 +127,7 @@ header .header-text {
   }
   header .header-text {
     max-width: 100%;
+    padding-top: 18px;
   }
   .header-img {
     margin-bottom: 55px;
