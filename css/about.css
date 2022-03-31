@@ -15,7 +15,7 @@ header {
   padding: 100px 0;
 }
 footer {
-  padding-bottom: 77px;
+  padding-bottom: 75px;
 }
 header .row {
   align-items: center;
@@ -126,7 +126,7 @@ footer .shadow-btn {
     margin-right: 10px;
   }
   footer {
-    padding-bottom: 47px;
+    padding-bottom: 45px;
   }
 }
 @media screen and (max-width: 479px) {
