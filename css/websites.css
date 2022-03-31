@@ -102,9 +102,9 @@ header .examples a:before {
     position: static;
     transform: none;
   }
-  .examples {
+  /* .examples {
     margin-top: 60px;
-  }
+  } */
 }
 @media screen and (max-width: 767px) {
   .header-img {
@@ -117,9 +117,9 @@ header .examples a:before {
   .subtext {
     display: none;
   }
-  .examples {
+  /* .examples {
     margin-top: 16px;
-  }
+  } */
   header .examples ul li {
     width: 100%;
   }
@@ -133,7 +133,7 @@ header .examples a:before {
   }
   header .header-text {
     max-width: 100%;
-    padding-top: 32px;
+    /* padding-top: 32px; */
   }
   .header-img {
     margin-bottom: 55px;
