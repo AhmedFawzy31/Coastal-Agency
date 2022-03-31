@@ -133,7 +133,8 @@ header .examples a:before {
   }
   header .header-text {
     max-width: 100%;
-    /* padding-top: 32px; */
+    padding-top: 32px;
+    padding-bottom: 15px;
   }
   .header-img {
     margin-bottom: 55px;
@@ -149,9 +150,6 @@ header .examples a:before {
   }
   .examples {
     margin-top: 0;
-  }
-  header .header-text {
-    padding-bottom: 15px;
   }
   header h1 {
     font-size: 55px;
