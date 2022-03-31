@@ -138,7 +138,7 @@ footer p {
     padding: 35px 23px;
   }
   header .hero {
-    padding: 0 23px;
+    padding: 0 15px;
   }
   header h1 {
     font-size: 40px;
@@ -175,9 +175,6 @@ footer p {
   }
   header {
     padding-bottom: 25px;
-  }
-  header .header-text {
-    margin-bottom: 40px;
   }
   header .map-wrapper {
     margin-top: 30px;
