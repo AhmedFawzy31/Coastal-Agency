@@ -1,6 +1,11 @@
 header {
-  padding-top: 160px;
-  padding-bottom: 195px;
+  display: flex;
+  flex-grow: 2;
+  align-items: center;
+  padding: 100px 0;
+}
+footer {
+  padding-bottom: 75px;
 }
 header h1 {
   margin: 0;
@@ -10,22 +15,19 @@ header .title {
 }
 header .header-text {
   max-width: 658px;
-  position: absolute;
-  left: 0;
-  top: 100%;
-  transform: translateY(50px);
   margin: 0;
+  padding: 50px 0;
 }
 header h2 {
   font-size: 15px;
   font-family: "ABC Whyte Book";
   color: var(--dark);
   margin: 0;
-  margin-top: 10px;
 }
 h2.subtext {
   padding-left: 55px;
   letter-spacing: -0.05em;
+  margin-top: 10px;
 }
 header .row {
   align-items: center;
@@ -63,12 +65,19 @@ header .examples a:before {
 .shadow-btn {
   max-width: 393px;
   height: 60px;
-  margin-top: 70px;
 }
 
 @media screen and (max-width: 1599px) {
   header .title {
     margin-left: 0;
+  }
+  header .header-text {
+    max-width: 600px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  header .header-text {
+    max-width: 500px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -114,10 +123,6 @@ header .examples a:before {
   header .examples ul li {
     width: 100%;
   }
-  header {
-    padding-top: 90px;
-    padding-bottom: 50px;
-  }
   header .header-img {
     margin-left: auto;
     margin-right: auto;
@@ -136,17 +141,31 @@ header .examples a:before {
   .shadow-btn {
     max-width: 100%;
     margin-right: 10px;
-    margin-top: 30px;
   }
 }
 @media screen and (max-width: 575px) {
+  header {
+    padding: 35px 0;
+  }
+  .examples {
+    margin-top: 0;
+  }
+  header .header-text {
+    padding-bottom: 15px;
+  }
   header h1 {
     font-size: 55px;
   }
+  footer {
+    padding-bottom: 45px;
+  }
 }
 @media screen and (max-width: 374px) {
+  footer {
+    padding-bottom: 30px;
+  }
   header {
-    padding-top: 25px;
+    padding: 35px 0;
   }
   header .header-img {
     max-width: 243px;
@@ -161,5 +180,28 @@ header .examples a:before {
   .shadow-btn {
     font-size: 13px;
     height: 43px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  header .row {
+    padding-bottom: 75px;
+    align-items: flex-end;
+  }
+  header .title {
+    margin-bottom: 0;
+    transform: translateY(50%);
+  }
+  header .header-text {
+    padding-top: 0;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  header .header-text {
+    max-width: 410px;
+  }
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  header .header-text {
+    max-width: 525px;
   }
 }

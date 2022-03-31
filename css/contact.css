@@ -1,6 +1,9 @@
 header {
-  padding-top: 180px;
-  padding-bottom: 190px;
+  padding: 77px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 2;
 }
 header h1 {
   margin: 0;
@@ -105,10 +108,6 @@ form .shadow-btn {
     font-size: 16px;
     max-width: 450px;
   }
-  header {
-    padding-top: 100px;
-    padding-bottom: 50px;
-  }
 }
 @media screen and (min-width: 768px) and (max-width: 992px) {
   .shadow-btn {
@@ -131,10 +130,6 @@ form .shadow-btn {
   }
 }
 @media screen and (max-width: 767px) {
-  header {
-    padding-top: 90px;
-    padding-bottom: 30px;
-  }
   .shadow-btn {
     width: auto;
   }
@@ -146,11 +141,11 @@ form .shadow-btn {
   .shadow-btn {
     margin-right: 10px;
   }
+  header {
+    padding: 35px 0 47px 0;
+  }
 }
 @media screen and (max-width: 479px) {
-  header {
-    padding-top: 42px;
-  }
   header h1 {
     font-size: 55px;
   }
@@ -164,7 +159,7 @@ form .shadow-btn {
 }
 @media screen and (max-width: 374px) {
   header {
-    padding-top: 18px;
+    padding: 25px 0 30px 0;
   }
   header h1 {
     font-size: 33px;
@@ -179,12 +174,6 @@ form .shadow-btn {
   }
   header .contact-tel {
     font-size: 16px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .shadow-btn {
-    position: absolute;
-    bottom: 50px;
   }
 }
 @media screen and (min-width: 992px) {

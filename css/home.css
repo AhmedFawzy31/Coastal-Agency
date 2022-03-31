@@ -4,15 +4,20 @@ body {
 }
 /* header */
 header {
-  padding-top: 90px;
-  padding-bottom: 50px;
+  padding-bottom: 77px;
   display: flex;
   flex-grow: 2;
+}
+header .header-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  justify-content: center;
+  padding-bottom: 100px;
 }
 header .container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 }
 header .row {
   align-items: center;
@@ -35,8 +40,8 @@ header .row > div:last-of-type {
 header .header-text {
   max-width: 800px;
   margin-top: -30px;
-  margin-bottom: 102px;
   padding-left: 38px;
+  margin-bottom: 0;
 }
 header .shadow-btn {
   width: 393px;
@@ -48,6 +53,9 @@ footer .footer-wrapper {
 }
 footer p {
   margin-left: 9px;
+}
+.nudgedown100 {
+  margin-top: 100px;
 }
 /* responsive */
 @media screen and (max-width: 1599px) {
@@ -78,7 +86,6 @@ footer p {
   header .header-text {
     max-width: 480px;
     padding-left: 10px;
-    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -92,12 +99,18 @@ footer p {
   }
 }
 @media screen and (max-width: 767px) {
+  .map-wrapper {
+    font-size: 12px;
+  }
+  header {
+    padding-bottom: 65px;
+  }
   header .bottom-section {
     display: block;
   }
   header .map-wrapper {
     justify-content: center;
-    margin-top: 50px;
+    margin-top: 75px;
   }
   header .row > div:first-of-type {
     order: 2;
@@ -116,13 +129,25 @@ footer p {
   header .header-text {
     max-width: 100%;
   }
+  .nudgedown100 {
+    margin-top: 0px;
+  }
 }
 @media screen and (max-width: 575px) {
-  .header-wrapper {
+  header .header-wrapper {
+    padding: 35px 23px;
+  }
+  header .hero {
     padding: 0 23px;
   }
   header h1 {
     font-size: 40px;
+  }
+  header {
+    padding-bottom: 35px;
+  }
+  header .map-wrapper {
+    margin-top: 47px;
   }
   header .header-text {
     font-size: 16px;
@@ -149,11 +174,13 @@ footer p {
     height: 50px;
   }
   header {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
   }
   header .header-text {
     margin-bottom: 40px;
+  }
+  header .map-wrapper {
+    margin-top: 30px;
   }
 }
 /* map */
@@ -163,11 +190,6 @@ footer p {
   line-height: 1;
   color: var(--dark2);
   font-family: "ABC Whyte Inktrap";
-}
-@media screen and (max-width: 767px) {
-  .map-wrapper {
-    font-size: 12px;
-  }
 }
 .map-wrapper {
   display: flex;
@@ -184,4 +206,9 @@ footer p {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+}
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  header .header-wrapper {
+    padding-top: 100px;
+  }
 }

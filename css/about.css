@@ -1,6 +1,21 @@
+.body-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
 header {
-  padding-top: 155px;
-  padding-bottom: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 2;
+  padding: 100px 0;
+}
+footer {
+  padding-bottom: 77px;
 }
 header .row {
   align-items: center;
@@ -14,17 +29,15 @@ header h1 {
 }
 header .header-text {
   padding-left: 30px;
+  margin-bottom: 0;
 }
 header .header-text:not(:last-of-type) {
   margin-bottom: 15px;
 }
-.shadow-btn {
+footer .shadow-btn {
   height: 60px;
-  margin-top: 62px;
+
   max-width: 403px;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 40px;
 }
 .header-img {
   margin-right: 25px;
@@ -35,9 +48,6 @@ header .header-text:not(:last-of-type) {
   max-height: 656px;
   width: 100%;
   object-fit: cover;
-}
-header .row > div:first-of-type > div {
-  margin-top: 30px;
 }
 /* responsive */
 @media screen and (max-width: 1599px) {
@@ -74,10 +84,6 @@ header .row > div:first-of-type > div {
   }
 }
 @media screen and (max-width: 767px) {
-  header {
-    padding-top: 90px;
-    padding-bottom: 30px;
-  }
   header .row > div:first-of-type > div {
     position: static;
   }
@@ -90,12 +96,11 @@ header .row > div:first-of-type > div {
     margin-bottom: 55px;
   }
   .header-img img {
-    max-height: 141px;
+    max-height: 500px;
     box-shadow: 10px 10px 0px 0px rgb(6 7 6);
   }
   .shadow-btn {
     max-width: 100% !important;
-    margin-top: 90px;
   }
   .header-img {
     margin-right: 0;
@@ -106,6 +111,9 @@ header .row > div:first-of-type > div {
   }
 }
 @media screen and (max-width: 575px) {
+  header {
+    padding: 35px 0;
+  }
   header .header-img {
     padding-left: 23px;
     padding-right: 33px;
@@ -117,12 +125,11 @@ header .row > div:first-of-type > div {
   .shadow-btn {
     margin-right: 10px;
   }
+  footer {
+    padding-bottom: 47px;
+  }
 }
 @media screen and (max-width: 479px) {
-  header {
-    padding-top: 42px;
-    padding-bottom: 30px;
-  }
   header h1 {
     margin-bottom: 13px;
   }
@@ -144,9 +151,12 @@ header .row > div:first-of-type > div {
     font-size: 13px;
     height: 43px;
   }
+  footer {
+    padding-bottom: 30px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {
-  header .shadow-btn {
+  .shadow-btn {
     width: 311px !important;
   }
 }

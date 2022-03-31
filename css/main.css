@@ -1,4 +1,14 @@
 /* variable */
+*,
+body,
+html {
+  cursor: url("../images/cursorAlt.png"), auto;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
 :root {
   --dark: #242220;
   --dark2: #1a1818;
@@ -48,10 +58,14 @@ a:hover {
   border: 1px solid #060706;
   box-shadow: 10px 10px 0px 0px rgba(6, 7, 6, 1);
 }
+.shadow-btn:hover {
+  opacity: 1;
+  background: black;
+  color: #e0d8ce;
+  box-shadow: 12px 12px 0px 0px rgba(6, 7, 6, 1);
+}
 @media screen and (min-width: 768px) {
   .shadow-btn:not(.bottom-section .shadow-btn):not(.contact-form .shadow-btn) {
-    position: absolute;
-    bottom: 50px;
     width: 393px;
   }
 }
@@ -67,8 +81,7 @@ a:hover {
 }
 /* general */
 body {
-  background-image: url("../images/Background.jpg");
-  background-size: contain;
+  background-image: url("../images/backgroundAnimation.gif");
   position: relative;
   min-height: 100vh;
 }
@@ -110,12 +123,15 @@ nav ul li a {
   }
   nav .nav-wrapper ul {
     justify-content: space-between;
-    margin-top: 15px;
+    margin-top: 35px;
   }
 }
 @media screen and (max-width: 575px) {
   nav .container {
     padding: 0 35px;
+  }
+  nav {
+    padding-top: 35px;
   }
 }
 @media screen and (max-width: 374px) {
