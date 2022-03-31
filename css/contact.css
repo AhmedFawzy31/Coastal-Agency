@@ -12,9 +12,8 @@ header h1 {
   position: relative;
 }
 .contact-text .header-text {
-  position: absolute;
   top: 100%;
-  transform: translateY(18px);
+  padding-top: 18px;
 }
 header .row {
   align-items: center;
